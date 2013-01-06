@@ -1,3 +1,5 @@
+require 'rbconfig'
+
 if RUBY_PLATFORM == "java"
   # Don't do anything when run in JRuby; this allows gem installation to pass.
   # We need to write a dummy Makefile so that RubyGems doesn't think compilation
@@ -10,8 +12,10 @@ if RUBY_PLATFORM == "java"
   end
   exit 0
 else
+  puts ENV.inspect
+  puts RbConfig::CONFIG.inspect
+  $extout = '/home/toddhitt/railsapp/shared/bundle'
   require "mkmf"
-  abort "This is a hacked extconf.rb"
   dir_config("bcrypt_ext")
   create_makefile("bcrypt_ext")
 end
