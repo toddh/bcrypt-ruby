@@ -45,3 +45,6 @@
 
 3.0.1
   - create raises an exception if the cost is higher than 31. GH #27
+  
+3.0.2
+  - Monkeying around with extconf.rb

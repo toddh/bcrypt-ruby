@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'bcrypt-ruby'
-  s.version = '3.0.1'
+  s.version = '3.0.2'
 
   s.summary = "OpenBSD's bcrypt() password hashing algorithm."
   s.description = <<-EOF
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.extensions = 'ext/mri/extconf.rb'
 
-  s.authors = ["Coda Hale"]
+  s.authors = ["Coda Hale", "Todd Hitt"]
   s.email = "coda.hale@gmail.com"
   s.homepage = "http://bcrypt-ruby.rubyforge.org"
   s.rubyforge_project = "bcrypt-ruby"
